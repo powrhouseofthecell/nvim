@@ -17,4 +17,4 @@ vim.opt.fillchars = {
     eob = ' '
 }
 
--- ovim.opt.fillchars = "eob: ,vert: "
+vim.opt.fillchars = "eob: ,vert: "
