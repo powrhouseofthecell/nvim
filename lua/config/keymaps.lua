@@ -12,12 +12,12 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 --------------------------------------------------------------------
 
 			-- NVIM TREE
-vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+-- vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 --------------------------------------------------------------------
 
 			-- BUFFERLINE
-
 -- CHECK: what is the difference between vim.api.nvim_set_keymap and vim.keymap.set
 
 local map = vim.api.nvim_set_keymap
