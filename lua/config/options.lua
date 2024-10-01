@@ -11,3 +11,10 @@ o.ruler = false
 
 -- Disable the OG nvim intro
 opt.shortmess:append "sI"
+
+-- Disable ~ on the lines
+vim.opt.fillchars = {
+    eob = ' '
+}
+
+-- ovim.opt.fillchars = "eob: ,vert: "
