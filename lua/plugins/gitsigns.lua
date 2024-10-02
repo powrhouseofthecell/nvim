@@ -1,5 +1,3 @@
--- Add this in your Lazy.nvim plugin setup file (e.g., 'init.lua' or 'plugins.lua')
--- Other plugin specifications
 return {
     'lewis6991/gitsigns.nvim',
     event = {"BufReadPre", "BufNewFile"}, -- Load on buffer read/new file
