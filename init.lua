@@ -3,15 +3,15 @@ require("config.lazy")
 require("config.options")
 require("config.keymaps")
 
-require("plugins.hairline")
-require("plugins.mason")
+require("plugins.colorscheme")
+require("plugins.gitsigns")
+require("plugins.harpoon")
+require("plugins.lualine")
+require("plugins.maximize")
 require("plugins.nvim-tree")
+require("plugins.nvim-ts-autotag")
+require("plugins.smart-splits")
 require("plugins.telescope")
-
-vim.cmd [[
-  augroup NvimTreeTabs
-    autocmd!
-    autocmd BufEnter * if &filetype == 'NvimTree' | setlocal showtabline=0 | endif
-    autocmd BufLeave * if &filetype == 'NvimTree' | setlocal showtabline=2 | endif
-  augroup END
-]]
+require("plugins.vim-fugitive")
+require("plugins.vim-surround")
+require("plugins.web-dev-icons")

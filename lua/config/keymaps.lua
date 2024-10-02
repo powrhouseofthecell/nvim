@@ -1,5 +1,47 @@
 local map = vim.keymap.set
 
+-- Don't put single character in the register
+map("n", "x", '"_x')
+
+--------------------------------------------------------------------
+
+-- Harpoon Start
+map("n", "<leader>hh", function()
+    require("harpoon.ui").toggle_quick_menu()
+end, {
+    desc = "Toggle Harpoon quick menu"
+})
+
+map("n", "<leader>ha", function()
+    require("harpoon.mark").add_file()
+end, {
+    desc = "Add file to Harpoon"
+})
+
+map("n", "<leader>hn", function()
+    require("harpoon.ui").nav_next()
+end, {
+    desc = "Move to next in Harpoon list"
+})
+
+map("n", "<leader>hp", function()
+    require("harpoon.ui").nav_prev()
+end, {
+    desc = "Move to previous in Harpoon list"
+})
+
+map("n", "<leader>hc", function()
+    require("harpoon.mark").clear_all()
+end, {
+    desc = "Clear all marks in Harpoon"
+})
+
+map("n", "<leader>ht", function()
+    require("telescope").extensions.harpoon.marks()
+end, {
+    desc = "Show marks in Telescope"
+})
+
 --------------------------------------------------------------------
 
 -- TELESCOPE
@@ -13,6 +55,10 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {
     desc = 'Telescope buffers'
 })
+
+vim.keymap.set('n', '<Tab>', builtin.buffers, {
+    desc = 'Telescope buffers'
+})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {
     desc = 'Telescope help tags'
 })
@@ -24,7 +70,25 @@ vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', {
     noremap = true,
     silent = true
 })
--- vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+
+--------------------------------------------------------------------
+
+-- Resize Buffers Start
+map("n", "<leader>l", "<cmd> SmartResizeRight <cr>")
+map("n", "<leader>h", "<cmd> SmartResizeLeft <cr>")
+map("n", "<leader>k", "<cmd> SmartResizeUp <cr>")
+map("n", "<leader>j", "<cmd> SmartResizeDown <cr>")
+-- Resize Buffers Start
+
+--------------------------------------------------------------------
+
+-- Maximizer Start
+map("n", "<leader>mx", function()
+    require('maximize').toggle()
+end, {
+    desc = "Toggle Maximize"
+})
+-- Maximizer End
 
 --------------------------------------------------------------------
 

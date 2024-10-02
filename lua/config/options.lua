@@ -9,6 +9,10 @@ o.relativenumber = true
 o.numberwidth = 2
 o.ruler = false
 
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+
 -- Disable the OG nvim intro
 opt.shortmess:append "sI"
 
@@ -16,5 +20,4 @@ opt.shortmess:append "sI"
 vim.opt.fillchars = {
     eob = ' '
 }
-
-vim.opt.fillchars = "eob: ,vert: "
+-- vim.opt.fillchars = "eob: ,vert: "
