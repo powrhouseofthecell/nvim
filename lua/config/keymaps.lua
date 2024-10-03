@@ -8,15 +8,13 @@ map("n", "x", '"_x')
 map("v", "J", ":m '>+1<cr>gv=gv")
 map("v", "K", ":m '<-2<cr>gv=gv")
 
-
-
 map("n", "J", "mzJ`z") -- Joining lines with J, the cursor will stay at the original position
-map ("n", "<C-d>", "<C-d>zz")
-map ("n", "<C-u>", "<C-u>zz")
-map ("n", "n", "nzzzv")
-map ("n", "N", "Nzzzv")
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
+map("n", "n", "nzzzv")
+map("n", "N", "Nzzzv")
 
-map ("x", "<leader>p", [["_dP]])
+map("x", "<leader>p", [["_dP]])
 
 -- with <leader>Y yank into the system register
 map({"n", "v"}, "<leader>y", [["+y]])
@@ -26,10 +24,22 @@ map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]) --
 -- Move between splits
 
 -- Remap Ctrl + h/j/k/l to navigate between windows
-map('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
-map('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
-map('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
-map('n', '<C-l>', '<C-w>l', { noremap = true, silent = true })
+map('n', '<C-h>', '<C-w>h', {
+    noremap = true,
+    silent = true
+})
+map('n', '<C-j>', '<C-w>j', {
+    noremap = true,
+    silent = true
+})
+map('n', '<C-k>', '<C-w>k', {
+    noremap = true,
+    silent = true
+})
+map('n', '<C-l>', '<C-w>l', {
+    noremap = true,
+    silent = true
+})
 
 --------------------------------------------------------------------
 
@@ -94,7 +104,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {
 --------------------------------------------------------------------
 
 -- NVIM TREE
-vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', {
+vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', {
     noremap = true,
     silent = true
 })
