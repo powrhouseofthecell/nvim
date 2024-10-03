@@ -9,12 +9,12 @@ g.mapleader = " "
 
 o.number = true
 o.relativenumber = true
-o.numberwidth = 2
+o.numberwidth = 4
 o.ruler = false
 
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 3
+opt.softtabstop = 3
+opt.shiftwidth = 3
 opt.expandtab = true
 
 opt.wrap = false
