@@ -2,7 +2,26 @@ local map = vim.keymap.set
 
 -- Don't put single character in the register
 map("n", "x", '"_x')
+--------------------------------------------------------------------
+-- ThePrimeagen Key Maps
 
+map("v", "J", ":m '>+1<cr>gv=gv")
+map("v", "K", ":m '<-2<cr>gv=gv")
+
+
+
+map("n", "J", "mzJ`z") -- Joining lines with J, the cursor will stay at the original position
+map ("n", "<C-d>", "<C-d>zz")
+map ("n", "<C-u>", "<C-u>zz")
+map ("n", "n", "nzzzv")
+map ("n", "N", "Nzzzv")
+
+map ("x", "<leader>p", [["_dP]])
+
+-- with <leader>Y yank into the system register
+map({"n", "v"}, "<leader>y", [["+y]])
+map("n", "<leader>Y", [["+Y]])
+map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]) -- replace the word you are on, globally
 --------------------------------------------------------------------
 -- Move between splits
 
