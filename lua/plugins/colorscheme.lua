@@ -1,16 +1,37 @@
-return {
-    'olivercederborg/poimandres.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require('poimandres').setup {
-            -- leave this setup function empty for default config
-            -- or refer to the configuration section
-            -- for configuration options
-        }
-    end,
+return {{ -- Lua
+   "tjdevries/colorbuddy.nvim",
+   config = function()
+      vim.cmd.colorscheme("gruvbuddy")
+   end
 
-    init = function()
-        vim.cmd("colorscheme poimandres")
-    end
 }
+   -- {
+   --     'RRethy/base16-nvim',
+   --     config = function()
+   --         require('base16-colorscheme').with_config({
+   --             telescope = true,
+   --             indentblankline = true,
+   --             notify = true,
+   --             ts_rainbow = true,
+   --             cmp = true,
+   --             illuminate = true,
+   --             dapui = true
+   --         })
+   --     end
+   -- } 
+   --    {
+   --     'rose-pine/neovim',
+   --     name = 'rose-pine',
+   --     config = function()
+   --         require('rose-pine').setup({
+   --             styles = {
+   --                 bold = true,
+   --                 italic = false,
+   --                 transparency = true
+   --             }
+   --         })
+   --         vim.cmd('colorscheme rose-pine')
+   --     end
+   -- }
+}
+
