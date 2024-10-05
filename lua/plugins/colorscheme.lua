@@ -1,5 +1,5 @@
 return {{ -- Lua
-   "tjdevries/colorbuddy.nvim",
+   "powrhouseofthecell/colorbuddy.nvim",
    config = function()
       vim.cmd.colorscheme("gruvbuddy")
    end
