@@ -1,3 +1,5 @@
+-- TODO: Rename to plugins
+
 require("config.lazy")
 
 require("config.options")
@@ -6,7 +8,7 @@ require("config.keymaps")
 require("plugins.mason")
 require("plugins.lspconfig")
 require("plugins.nvim-cmp")
-require("plugins.liniting")
+-- require("plugins.liniting")
 
 require("plugins.auto-close")
 require("plugins.colorscheme")
