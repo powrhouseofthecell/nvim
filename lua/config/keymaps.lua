@@ -17,7 +17,7 @@ map("n", "N", "Nzzzv")
 map("x", "<leader>p", [["_dP]])
 
 -- with <leader>Y yank into the system register
-map({"n", "v"}, "<leader>y", [["+y]])
+map({ "n", "v" }, "<leader>y", [["+y]])
 map("n", "<leader>Y", [["+Y]])
 map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]) -- replace the word you are on, globally
 --------------------------------------------------------------------
@@ -25,59 +25,59 @@ map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]) --
 
 -- Remap Ctrl + h/j/k/l to navigate between windows
 map('n', '<C-h>', '<C-w>h', {
-    noremap = true,
-    silent = true
+   noremap = true,
+   silent = true
 })
 map('n', '<C-j>', '<C-w>j', {
-    noremap = true,
-    silent = true
+   noremap = true,
+   silent = true
 })
 map('n', '<C-k>', '<C-w>k', {
-    noremap = true,
-    silent = true
+   noremap = true,
+   silent = true
 })
 map('n', '<C-l>', '<C-w>l', {
-    noremap = true,
-    silent = true
+   noremap = true,
+   silent = true
 })
 
 --------------------------------------------------------------------
 
 -- Harpoon Start
 map("n", "<leader>hh", function()
-    require("harpoon.ui").toggle_quick_menu()
+   require("harpoon.ui").toggle_quick_menu()
 end, {
-    desc = "Toggle Harpoon quick menu"
+   desc = "Toggle Harpoon quick menu"
 })
 
 map("n", "<leader>ha", function()
-    require("harpoon.mark").add_file()
+   require("harpoon.mark").add_file()
 end, {
-    desc = "Add file to Harpoon"
+   desc = "Add file to Harpoon"
 })
 
 map("n", "<leader>hn", function()
-    require("harpoon.ui").nav_next()
+   require("harpoon.ui").nav_next()
 end, {
-    desc = "Move to next in Harpoon list"
+   desc = "Move to next in Harpoon list"
 })
 
 map("n", "<leader>hp", function()
-    require("harpoon.ui").nav_prev()
+   require("harpoon.ui").nav_prev()
 end, {
-    desc = "Move to previous in Harpoon list"
+   desc = "Move to previous in Harpoon list"
 })
 
 map("n", "<leader>hc", function()
-    require("harpoon.mark").clear_all()
+   require("harpoon.mark").clear_all()
 end, {
-    desc = "Clear all marks in Harpoon"
+   desc = "Clear all marks in Harpoon"
 })
 
 map("n", "<leader>ht", function()
-    require("telescope").extensions.harpoon.marks()
+   require("telescope").extensions.harpoon.marks()
 end, {
-    desc = "Show marks in Telescope"
+   desc = "Show marks in Telescope"
 })
 
 --------------------------------------------------------------------
@@ -85,28 +85,28 @@ end, {
 -- TELESCOPE
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {
-    desc = 'Telescope find files'
+   desc = 'Telescope find files'
 })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {
-    desc = 'Telescope live grep'
+   desc = 'Telescope live grep'
 })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {
-    desc = 'Telescope buffers'
+   desc = 'Telescope buffers'
 })
 
 vim.keymap.set('n', '<Tab>', builtin.buffers, {
-    desc = 'Telescope buffers'
+   desc = 'Telescope buffers'
 })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {
-    desc = 'Telescope help tags'
+   desc = 'Telescope help tags'
 })
 
 --------------------------------------------------------------------
 
 -- NVIM TREE
 vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', {
-    noremap = true,
-    silent = true
+   noremap = true,
+   silent = true
 })
 
 --------------------------------------------------------------------
@@ -122,9 +122,9 @@ map("n", "<leader>j", "<cmd> SmartResizeDown <cr>")
 
 -- Maximizer Start
 map("n", "<leader>mx", function()
-    require('maximize').toggle()
+   require('maximize').toggle()
 end, {
-    desc = "Toggle Maximize"
+   desc = "Toggle Maximize"
 })
 -- Maximizer End
 

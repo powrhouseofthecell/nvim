@@ -3,7 +3,7 @@ local o = vim.o
 local g = vim.g
 
 -- Fat cursor all around
-opt.guicursor = ""
+-- opt.guicursor = ""
 
 g.mapleader = " "
 
@@ -31,6 +31,6 @@ opt.shortmess:append "sI"
 
 -- Disable ~ on the lines
 vim.opt.fillchars = {
-    eob = ' '
+   eob = ' '
 }
 -- vim.opt.fillchars = "eob: ,vert: "
