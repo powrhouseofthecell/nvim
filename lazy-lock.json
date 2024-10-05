@@ -1,4 +1,5 @@
 {
+  "colorbuddy.nvim": { "branch": "master", "commit": "cd29a45f0e0f3acf22bb3667fdc7e7aee2a8a075" },
   "gitsigns.nvim": { "branch": "main", "commit": "863903631e676b33e8be2acb17512fdc1b80b4fb" },
   "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },
   "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
