@@ -5,7 +5,7 @@ return {
         require('lualine').setup({
             options = {
                 icons_enabled = true,
-                theme = 'base16',
+                theme = 'ayu_mirage',
                 component_separators = {
                     left = '',
                     right = ''
