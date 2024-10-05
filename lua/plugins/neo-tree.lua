@@ -1,38 +1,38 @@
 return {
-   "nvim-neo-tree/neo-tree.nvim",
-   branch = "v3.x",
-   dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim" },
-   config = function()
-      require("neo-tree").setup({
-         window = {
-            width = 30
-         },
-         hide_root_node = true,
-         default_component_configs = {
-            git_status = {
-               symbols = {
-                  unstaged = "✗", -- Icon for unstaged files
-                  staged = "✓", -- Icon for staged files
-                  unmerged = "", -- Icon for unmerged files
-                  renamed = "➜", -- Icon for renamed files
-                  deleted = "", -- Icon for deleted files
-                  untracked = "★", -- Icon for untracked files
-                  ignored = "◌" -- Icon for ignored files
-               }
-            }
-         },
-         renderer = {
-            highlight_git = true,
-            icons = {
-               show = {
-                  git = true,
-                  folder_arrow = true,
-                  file = true
-               }
-            }
-         }
-      })
-   end
+	"nvim-neo-tree/neo-tree.nvim",
+	branch = "v3.x",
+	dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim" },
+	config = function()
+		require("neo-tree").setup({
+			window = {
+				width = 30,
+			},
+			hide_root_node = true,
+			default_component_configs = {
+				git_status = {
+					symbols = {
+						unstaged = "✗", -- Icon for unstaged files
+						staged = "✓", -- Icon for staged files
+						unmerged = "", -- Icon for unmerged files
+						renamed = "➜", -- Icon for renamed files
+						deleted = "", -- Icon for deleted files
+						untracked = "★", -- Icon for untracked files
+						ignored = "◌", -- Icon for ignored files
+					},
+				},
+			},
+			renderer = {
+				highlight_git = true,
+				icons = {
+					show = {
+						git = true,
+						folder_arrow = true,
+						file = true,
+					},
+				},
+			},
+		})
+	end,
 }
 
 --------------------------------------------------------------------------------------------------

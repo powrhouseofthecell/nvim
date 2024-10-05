@@ -27,10 +27,10 @@ opt.termguicolors = true
 -- opt.colorcolumn = "130"
 
 -- Disable the OG nvim intro
-opt.shortmess:append "sI"
+opt.shortmess:append("sI")
 
 -- Disable ~ on the lines
 vim.opt.fillchars = {
-   eob = ' '
+	eob = " ",
 }
 -- vim.opt.fillchars = "eob: ,vert: "
