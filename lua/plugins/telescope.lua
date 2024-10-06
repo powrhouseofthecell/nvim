@@ -29,6 +29,7 @@ return {
 			pickers = {
 				find_files = {
 					hidden = true,
+					-- no_ignore = true,
 					-- needed to exclude some files & dirs from general search
 					-- when not included or specified in .gitignore
 					find_command = {
