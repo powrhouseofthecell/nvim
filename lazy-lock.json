@@ -3,10 +3,6 @@
     "branch": "master",
     "commit": "03c8e67eb7293c404845b3982db895d59c0d1538"
   },
-  "ale": {
-    "branch": "master",
-    "commit": "a7ef1817b7aa06d0f80952ad530be87ad3c8f6e2"
-  },
   "cmp-buffer": {
     "branch": "main",
     "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa"
@@ -132,4 +128,3 @@
     "commit": "3d188ed2113431cf8dac77be61b842acb64433d9"
   }
 }
-
