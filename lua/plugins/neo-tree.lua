@@ -7,6 +7,16 @@ return {
 			window = {
 				width = 30,
 			},
+			event_handlers = {
+				{
+					event = "neo_tree_buffer_enter",
+					handler = function(arg)
+						vim.cmd([[
+          setlocal relativenumber
+        ]])
+					end,
+				},
+			},
 			hide_root_node = true,
 			default_component_configs = {
 				git_status = {
