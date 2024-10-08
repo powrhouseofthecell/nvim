@@ -19,10 +19,6 @@
     "branch": "master",
     "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843"
   },
-  "colorbuddy.nvim": {
-    "branch": "master",
-    "commit": "cd29a45f0e0f3acf22bb3667fdc7e7aee2a8a075"
-  },
   "conform.nvim": {
     "branch": "master",
     "commit": "40d4e98fcc3e6f485f0e8924c63734bc7e305967"
@@ -41,7 +37,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "1159bdccd8910a0fd0914b24d6c3d186689023d9"
+    "commit": "077102c5bfc578693f12377846d427f49bc50076"
   },
   "lspkind.nvim": {
     "branch": "master",
@@ -110,6 +106,10 @@
   "plenary.nvim": {
     "branch": "master",
     "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d"
+  },
+  "rose-pine": {
+    "branch": "main",
+    "commit": "8b1fd252255a7f2c41b4192a787ab62660b29f72"
   },
   "smart-splits.nvim": {
     "branch": "master",
