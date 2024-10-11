@@ -3,6 +3,10 @@
     "branch": "master",
     "commit": "03c8e67eb7293c404845b3982db895d59c0d1538"
   },
+  "barbar.nvim": {
+    "branch": "master",
+    "commit": "53b5a2f34b68875898f0531032fbf090e3952ad7"
+  },
   "cmp-buffer": {
     "branch": "main",
     "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa"
@@ -25,7 +29,7 @@
   },
   "friendly-snippets": {
     "branch": "main",
-    "commit": "00ba9dd3df89509f95437b8d595553707c46d5ea"
+    "commit": "de8fce94985873666bd9712ea3e49ee17aadb1ed"
   },
   "gitsigns.nvim": {
     "branch": "main",
