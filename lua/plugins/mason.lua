@@ -28,9 +28,9 @@ return {
 				"html",
 				"cssls",
 				"tailwindcss",
-				"lua-language-server",
+				-- "lua-language-server",
 				"emmet_ls",
-				"json-lsp",
+				-- "json-lsp",
 				"gopls",
 			},
 		})
