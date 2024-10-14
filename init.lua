@@ -11,7 +11,6 @@ require("plugins.nvim-cmp")
 -- require("plugins.liniting")
 
 require("plugins.auto-close")
-require("plugins.barbar")
 require("plugins.colorscheme")
 require("plugins.gitsigns")
 require("plugins.harpoon")

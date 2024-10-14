@@ -12,9 +12,9 @@ o.relativenumber = true
 o.numberwidth = 4
 o.ruler = false
 
-opt.tabstop = 3
-opt.softtabstop = 3
-opt.shiftwidth = 3
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 
 opt.wrap = false
