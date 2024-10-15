@@ -3,7 +3,7 @@ local o = vim.o
 local g = vim.g
 
 -- Fat cursor all around
--- opt.guicursor = ""
+opt.guicursor = ""
 
 g.mapleader = " "
 
