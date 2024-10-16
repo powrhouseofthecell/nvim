@@ -23,9 +23,13 @@
     "branch": "master",
     "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843"
   },
+  "colorbuddy.nvim": {
+    "branch": "master",
+    "commit": "a10c3f68410b0430ae19c086b50c724919b07927"
+  },
   "conform.nvim": {
     "branch": "master",
-    "commit": "40d4e98fcc3e6f485f0e8924c63734bc7e305967"
+    "commit": "f5bd8419f8a29451e20bdb1061a54fe13d5c8de3"
   },
   "friendly-snippets": {
     "branch": "main",
@@ -93,7 +97,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "7c4d0f77b8323ff679010706292e5caa4a13d8e6"
+    "commit": "541f3a2781de481bb84883889e4d9f0904250a56"
   },
   "nvim-notify": {
     "branch": "master",
@@ -101,7 +105,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "39904fd016120d87010a93ccb9845c821ba2f1dd"
+    "commit": "92725df6222614307c4712eb9982e5287f21aa11"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -114,10 +118,6 @@
   "plenary.nvim": {
     "branch": "master",
     "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d"
-  },
-  "rose-pine": {
-    "branch": "main",
-    "commit": "d396005db5bbd1d4ec7772a7c96c96f4c4802328"
   },
   "smart-splits.nvim": {
     "branch": "master",
