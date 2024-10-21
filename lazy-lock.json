@@ -3,10 +3,6 @@
     "branch": "master",
     "commit": "03c8e67eb7293c404845b3982db895d59c0d1538"
   },
-  "barbar.nvim": {
-    "branch": "master",
-    "commit": "53b5a2f34b68875898f0531032fbf090e3952ad7"
-  },
   "cmp-buffer": {
     "branch": "main",
     "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa"
@@ -37,7 +33,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "863903631e676b33e8be2acb17512fdc1b80b4fb"
+    "commit": "ee7634ab4f0a6606438fe13e16cbf2065589a5ed"
   },
   "harpoon": {
     "branch": "master",
@@ -89,7 +85,7 @@
   },
   "nvim-cmp": {
     "branch": "main",
-    "commit": "ae644feb7b67bf1ce4260c231d1d4300b19c6f30"
+    "commit": "2c93d5e7e2eb20c4faf88ddf3d421684e8549b35"
   },
   "nvim-lsp-file-operations": {
     "branch": "master",
@@ -97,7 +93,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "541f3a2781de481bb84883889e4d9f0904250a56"
+    "commit": "84f867753f659bfd9319f75bd5eb273a315f2da5"
   },
   "nvim-notify": {
     "branch": "master",
@@ -105,7 +101,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "92725df6222614307c4712eb9982e5287f21aa11"
+    "commit": "df20c049694474021cffb2cc8687c809adc1cbba"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -121,7 +117,7 @@
   },
   "smart-splits.nvim": {
     "branch": "master",
-    "commit": "70f9e4f36082bf28b8bc1d05e2ea7c3f6aeb51ff"
+    "commit": "32172b6598c1c647b96aeead67896c59ca4b7aa6"
   },
   "telescope.nvim": {
     "branch": "master",
