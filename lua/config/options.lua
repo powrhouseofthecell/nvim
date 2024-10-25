@@ -33,4 +33,4 @@ opt.shortmess:append("sI")
 vim.opt.fillchars = {
 	eob = " ",
 }
-vim.opt.fillchars = "eob: ,vert: "
+-- vim.opt.fillchars = "eob: ,vert: "
