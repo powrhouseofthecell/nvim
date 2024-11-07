@@ -5,7 +5,7 @@ return {
 		require("lualine").setup({
 			options = {
 				icons_enabled = true,
-				theme = "nightfly",
+				theme = "gruvbox_dark",
 				component_separators = {
 					left = "",
 					right = "",
@@ -14,7 +14,7 @@ return {
 					left = "",
 					right = "",
 				},
-				disabled_filetypes = { "neo-tree" },
+				-- disabled_filetypes = { "neo-tree" },
 			},
 			sections = {
 				lualine_a = { "mode" },
