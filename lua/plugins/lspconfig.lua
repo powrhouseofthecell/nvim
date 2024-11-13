@@ -101,6 +101,12 @@ return {
 			function(server_name)
 				lspconfig[server_name].setup({
 					capabilities = capabilities,
+					-- Disable suggestions (convert to ES modules)
+					init_options = {
+						preferences = {
+							disableSuggestions = true,
+						},
+					},
 				})
 			end,
 			["emmet_ls"] = function()
