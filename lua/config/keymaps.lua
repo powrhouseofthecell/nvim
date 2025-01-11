@@ -94,6 +94,14 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, {
 	desc = "Telescope buffers",
 })
 
+vim.keymap.set("n", "<leader>gs", builtin.git_status, {
+	desc = "Telescope git status",
+})
+
+vim.keymap.set("n", "<leader>gb", builtin.git_branches, {
+	desc = "Telescope git git branches",
+})
+
 vim.keymap.set("n", "<leader><Tab>", builtin.buffers, {
 	desc = "Telescope buffers",
 })
