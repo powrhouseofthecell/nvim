@@ -17,7 +17,7 @@ return {
 					end,
 				},
 			},
-			hide_root_node = true,
+			hide_root_node = false,
 			default_component_configs = {
 				git_status = {
 					symbols = {
