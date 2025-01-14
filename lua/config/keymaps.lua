@@ -111,7 +111,7 @@ vim.keymap.set("n", "<leader>fh", builtin.help_tags, {
 
 --------------------------------------------------------------------
 
--- Neotree
+-- NvimTree
 vim.keymap.set("n", "<C-n>", ":NvimTreeToggle toggle<CR>", {
 	noremap = true,
 	silent = true,
