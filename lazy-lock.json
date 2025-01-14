@@ -39,6 +39,10 @@
     "branch": "master",
     "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3"
   },
+  "kanagawa.nvim": {
+    "branch": "master",
+    "commit": "988082eb00b845e4afbcaa4fd8e903da8a3ab3b9"
+  },
   "lazy.nvim": {
     "branch": "main",
     "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3"
@@ -110,10 +114,6 @@
   "plenary.nvim": {
     "branch": "master",
     "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d"
-  },
-  "rose-pine": {
-    "branch": "main",
-    "commit": "91548dca53b36dbb9d36c10f114385f759731be1"
   },
   "smart-splits.nvim": {
     "branch": "master",
