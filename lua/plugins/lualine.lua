@@ -1,3 +1,8 @@
+-- Function to get the root folder name
+local function get_root_folder()
+	return "  " .. vim.fn.fnamemodify(vim.fn.getcwd(), ":t") -- Get the last part of the current working directory
+end
+
 return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -14,7 +19,7 @@ return {
 					left = "",
 					right = "",
 				},
-				-- disabled_filetypes = { "neo-tree" },
+				disabled_filetypes = { "NvimTree" },
 			},
 			sections = {
 				lualine_a = { "mode" },
@@ -33,7 +38,7 @@ return {
 						path = 1,
 					},
 				},
-				lualine_x = { "encoding", "fileformat", "filetype" },
+				lualine_x = { get_root_folder, "encoding", "fileformat", "filetype" }, -- Add root folder here
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
 			},

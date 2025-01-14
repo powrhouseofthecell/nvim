@@ -3,8 +3,8 @@ return {
 	config = function()
 		require("barbar").setup({
 			sidebar_filetypes = {
-				-- Enable offset for Neo-tree
-				["neo-tree"] = { event = "BufWinLeave" },
+				-- Enable offset for NvimTree
+				NvimTree = { event = "BufWinLeave" },
 			},
 		})
 	end,
