@@ -61,7 +61,6 @@ return {
 				number = true,
 				width = 30,
 				side = "left",
-				hide_root_folder = false,
 			},
 			renderer = {
 				root_folder_label = false,
