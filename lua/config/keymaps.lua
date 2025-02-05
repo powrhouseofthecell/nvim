@@ -2,7 +2,10 @@ local map = vim.keymap.set
 
 -- Don't put single character in the register
 map("n", "x", '"_x')
---------------------------------------------------------------------
+-------------------------------------------------------------------
+--- Gitsigns
+map("v", "<leader>r", "<Cmd>Gitsigns reset_hunk<CR>") -- Reset and Selected Hunk
+-------------------------------------------------------------------
 -- ThePrimeagen Key Maps
 
 map("v", "J", ":m '>+1<cr>gv=gv")
