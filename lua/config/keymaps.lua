@@ -166,3 +166,5 @@ map("n", "<C-x>", "<Cmd>BufferCloseAllButCurrent<CR>", opts)
 map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
 
 --------------------------------------------------------------------
+--- Toggle Term
+map("n", "<leader>tf", "<Cmd>ToggleTerm direction=float<CR>", opts)
