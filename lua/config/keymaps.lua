@@ -102,7 +102,11 @@ vim.keymap.set("n", "<leader>gs", builtin.git_status, {
 })
 
 vim.keymap.set("n", "<leader>gb", builtin.git_branches, {
-	desc = "Telescope git git branches",
+	desc = "Telescope git branches",
+})
+
+vim.keymap.set("n", "<leader>gc", builtin.git_commits, {
+	desc = "Telescope git commits",
 })
 
 vim.keymap.set("n", "<leader><Tab>", builtin.buffers, {
