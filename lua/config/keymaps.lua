@@ -4,7 +4,8 @@ local map = vim.keymap.set
 map("n", "x", '"_x')
 -------------------------------------------------------------------
 --- Gitsigns
-map("v", "<leader>r", "<Cmd>Gitsigns reset_hunk<CR>") -- Reset and Selected Hunk
+map("v", "<leader>rh", "<Cmd>Gitsigns reset_hunk<CR>") -- Reset Selected Hunk
+map("v", "<leader>sh", "<Cmd>Gitsigns stage_hunk<CR>") -- Stage Selected Hunk
 -------------------------------------------------------------------
 -- ThePrimeagen Key Maps
 
