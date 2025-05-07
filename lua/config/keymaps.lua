@@ -84,6 +84,26 @@ end, {
 	desc = "Show marks in Telescope",
 })
 
+map("n", "<leader>1", function()
+	require("harpoon.ui").nav_file(1)
+end, { desc = "Switch to file 1" })
+
+map("n", "<leader>2", function()
+	require("harpoon.ui").nav_file(2)
+end, { desc = "Switch to file 2" })
+
+map("n", "<leader>3", function()
+	require("harpoon.ui").nav_file(3)
+end, { desc = "Switch to file 3" })
+
+map("n", "<leader>4", function()
+	require("harpoon.ui").nav_file(4)
+end, { desc = "Switch to file 3" })
+
+map("n", "<leader>5", function()
+	require("harpoon.ui").nav_file(5)
+end, { desc = "Switch to file 3" })
+
 --------------------------------------------------------------------
 
 -- TELESCOPE
@@ -110,9 +130,6 @@ vim.keymap.set("n", "<leader>gc", builtin.git_commits, {
 	desc = "Telescope git commits",
 })
 
-vim.keymap.set("n", "<leader><Tab>", builtin.buffers, {
-	desc = "Telescope buffers",
-})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {
 	desc = "Telescope help tags",
 })
