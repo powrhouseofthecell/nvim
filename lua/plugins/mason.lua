@@ -28,10 +28,15 @@ return {
 				"html",
 				"cssls",
 				"tailwindcss",
-				-- "lua-language-server",
 				"emmet_ls",
-				-- "json-lsp",
 				"gopls",
+				-- "lua-language-server",
+				-- "json-lsp",
+				-- "golangci-lint",
+				-- "dockerfile-language-server",
+				-- "dotenv"
+				-- "golangci-lint"
+				-- "dockerfile-language-server"
 			},
 		})
 
@@ -40,6 +45,7 @@ return {
 				"prettierd", -- prettier formatter
 				"stylua", -- lua formatter
 				"gopls", -- go formatter
+				"eslint_d", -- eslint
 			},
 		})
 	end,
