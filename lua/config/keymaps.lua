@@ -98,11 +98,19 @@ end, { desc = "Switch to file 3" })
 
 map("n", "<leader>4", function()
 	require("harpoon.ui").nav_file(4)
-end, { desc = "Switch to file 3" })
+end, { desc = "Switch to file 4" })
 
 map("n", "<leader>5", function()
 	require("harpoon.ui").nav_file(5)
-end, { desc = "Switch to file 3" })
+end, { desc = "Switch to file 5" })
+
+map("n", "<leader>6", function()
+	require("harpoon.ui").nav_file(6)
+end, { desc = "Switch to file 6" })
+
+map("n", "<leader>7", function()
+	require("harpoon.ui").nav_file(7)
+end, { desc = "Switch to file 7" })
 
 --------------------------------------------------------------------
 
