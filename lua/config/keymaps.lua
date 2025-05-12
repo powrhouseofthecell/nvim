@@ -199,7 +199,7 @@ map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
 --- Toggle Term
 map("n", "<leader>tt", "<Cmd>ToggleTerm direction=float<CR>", opts)
 
--------------------------------------------------------------------
+--------------------------------------------------------------------
 
 -- Toggle tabline visibility
 function ToggleTabline()
@@ -212,4 +212,15 @@ function ToggleTabline()
 	end
 end
 
-vim.keymap.set("n", "<leader>`", ToggleTabline, { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>-", ToggleTabline, { noremap = true, silent = true })
+
+--------------------------------------------------------------------
+--- Vim Fugitive
+
+vim.keymap.set("n", "<leader>G", function()
+	vim.cmd("Git")
+end, { noremap = true, silent = true, desc = "Open Fugitive Git" })
+
+vim.keymap.set("n", "<leader>Gc", function()
+	vim.cmd("Git commit")
+end, { noremap = true, silent = true, desc = "Git commit" })
