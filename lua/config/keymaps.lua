@@ -198,3 +198,18 @@ map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
 --------------------------------------------------------------------
 --- Toggle Term
 map("n", "<leader>tt", "<Cmd>ToggleTerm direction=float<CR>", opts)
+
+-------------------------------------------------------------------
+
+-- Toggle tabline visibility
+function ToggleTabline()
+	if vim.o.showtabline == 0 then
+		vim.o.showtabline = 2
+		print("Tabline: ON")
+	else
+		vim.o.showtabline = 0
+		print("Tabline: OFF")
+	end
+end
+
+vim.keymap.set("n", "<leader>`", ToggleTabline, { noremap = true, silent = true })
