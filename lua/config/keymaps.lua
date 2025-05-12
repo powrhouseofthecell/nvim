@@ -223,8 +223,8 @@ end, { noremap = true, silent = true, desc = "Open Fugitive Git" })
 
 vim.keymap.set("n", "<leader>Gc", function()
 	vim.cmd("Git commit")
-end, { noremap = true, silent = true, desc = "Git commit" })
+end, { noremap = true, silent = true, desc = "Git Fugitive commit" })
 
 vim.keymap.set("n", "<leader>Gp", function()
 	vim.cmd("Git push")
-end, { noremap = true, silent = true, desc = "Git push" })
+end, { noremap = true, silent = true, desc = "Git Fugitive push" })
