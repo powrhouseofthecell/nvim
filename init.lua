@@ -5,6 +5,7 @@ require("config.lazy")
 require("config.options")
 require("config.keymaps")
 
+-- REMOVE THIS
 -- require("plugins.mason")
 -- require("plugins.lspconfig")
 -- require("plugins.nvim-cmp")
