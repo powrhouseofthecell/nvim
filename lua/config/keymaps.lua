@@ -217,14 +217,14 @@ vim.keymap.set("n", "<leader>-", ToggleTabline, { noremap = true, silent = true 
 --------------------------------------------------------------------
 --- Vim Fugitive
 
-vim.keymap.set("n", "<leader>G", function()
+vim.keymap.set("n", "<leader>g", function()
 	vim.cmd("Git")
 end, { noremap = true, silent = true, desc = "Open Fugitive Git" })
 
-vim.keymap.set("n", "<leader>Gc", function()
+vim.keymap.set("n", "<leader>gc", function()
 	vim.cmd("Git commit")
 end, { noremap = true, silent = true, desc = "Git Fugitive commit" })
 
-vim.keymap.set("n", "<leader>Gp", function()
+vim.keymap.set("n", "<leader>gp", function()
 	vim.cmd("Git push")
 end, { noremap = true, silent = true, desc = "Git Fugitive push" })
