@@ -63,18 +63,18 @@ vim.api.nvim_create_user_command("ClearRegisters", clear_registers, {
 })
 
 -- Sets colors to line numbers Above, Current and Below  in this order
-function LineNumberColors()
-	-- vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#51B3EC", bold = true })
-	vim.api.nvim_set_hl(0, "LineNr", { fg = "gray", bold = false })
-	-- vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#FB508F", bold = true })
-end
-LineNumberColors()
+-- function LineNumberColors()
+-- 	-- vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#51B3EC", bold = true })
+-- 	vim.api.nvim_set_hl(0, "LineNr", { fg = "gray", bold = false })
+-- 	-- vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#FB508F", bold = true })
+-- end
+-- LineNumberColors()
 
 -- Remove italics from all highlight groups (brute-force)
-for _, group in ipairs(vim.fn.getcompletion("@", "highlight")) do
-	local hl = vim.api.nvim_get_hl(0, { name = group, link = false })
-	if hl.italic then
-		hl.italic = false
-		vim.api.nvim_set_hl(0, group, hl)
-	end
-end
+-- for _, group in ipairs(vim.fn.getcompletion("@", "highlight")) do
+-- 	local hl = vim.api.nvim_get_hl(0, { name = group, link = false })
+-- 	if hl.italic then
+-- 		hl.italic = false
+-- 		vim.api.nvim_set_hl(0, group, hl)
+-- 	end
+-- end

@@ -36,17 +36,32 @@ return {
 	-- }
 
 	{
-		"rose-pine/neovim",
-		name = "rose-pine",
+		"catppuccin/nvim",
+		name = "catppuccin",
 		config = function()
-			require("rose-pine").setup({
+			require("catppuccin").setup({
 				styles = {
 					bold = true,
 					italic = false,
 					transparency = true,
 				},
 			})
-			vim.cmd("colorscheme rose-pine")
+			vim.cmd("colorscheme catppuccin-mocha")
 		end,
 	},
+
+	-- {
+	-- 	"rose-pine/neovim",
+	-- 	name = "rose-pine",
+	-- 	config = function()
+	-- 		require("rose-pine").setup({
+	-- 			styles = {
+	-- 				bold = true,
+	-- 				italic = false,
+	-- 				transparency = true,
+	-- 			},
+	-- 		})
+	-- 		vim.cmd("colorscheme rose-pine")
+	-- 	end,
+	-- },
 }
