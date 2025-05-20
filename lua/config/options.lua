@@ -7,6 +7,7 @@ opt.guicursor = ""
 
 g.mapleader = " "
 
+o.guicursor = "a:blinkon0"
 o.number = true
 o.relativenumber = true
 o.numberwidth = 4
