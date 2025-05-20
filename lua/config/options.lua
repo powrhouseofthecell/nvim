@@ -24,7 +24,7 @@ opt.incsearch = true
 
 opt.termguicolors = true
 
-opt.colorcolumn = "100"
+opt.colorcolumn = "120"
 opt.scrolloff = 10
 -- Disable the OG nvim intro
 opt.shortmess:append("sI")
