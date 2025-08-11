@@ -142,6 +142,26 @@ vim.keymap.set("n", "<leader>fh", builtin.help_tags, {
 	desc = "Telescope help tags",
 })
 
+vim.keymap.set({ "n", "v" }, "<leader>fw", function()
+	local mode = vim.fn.mode()
+	local search
+	if mode == "v" or mode == "V" then
+		-- Use the default register to yank; reset selection and yank
+		vim.cmd('normal! "vy') -- yanks selection into register v, but "v is not standard
+		search = vim.fn.getreg("v") -- register v may not work if not used/created
+	-- Instead, use the unnamed or 0 register:
+	-- vim.cmd('normal! y')
+	-- search = vim.fn.getreg('"')
+	-- Or:
+	-- search = vim.fn.getreg('0')
+	-- Optionally, escape ripgrep special chars: search = vim.fn.escape(search, '\\')
+	-- NO need to prefix with a quote for exact match!
+	else
+		search = vim.fn.expand("<cword>")
+	end
+	require("telescope.builtin").live_grep({ default_text = search })
+end, { noremap = true, silent = true })
+
 --------------------------------------------------------------------
 
 -- NvimTree
