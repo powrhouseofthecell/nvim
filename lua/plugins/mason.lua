@@ -47,7 +47,6 @@ return {
 				"stylua", -- lua formatter
 				"gopls", -- go formatter
 				"eslint_d", -- eslint
-				"codelldb",
 			},
 		})
 	end,
