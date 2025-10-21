@@ -30,6 +30,7 @@ return {
 				"tailwindcss",
 				"emmet_ls",
 				"gopls",
+				"rust_analyzer",
 				-- "lua-language-server",
 				-- "json-lsp",
 				-- "golangci-lint",
@@ -46,6 +47,7 @@ return {
 				"stylua", -- lua formatter
 				"gopls", -- go formatter
 				"eslint_d", -- eslint
+				"codelldb",
 			},
 		})
 	end,
