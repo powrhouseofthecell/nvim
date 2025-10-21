@@ -1,30 +1,7 @@
--- TODO: Rename to plugins
-
 require("config.lazy")
 
 require("config.options")
 require("config.keymaps")
-
--- REMOVE THIS
--- require("plugins.mason")
--- require("plugins.lspconfig")
--- require("plugins.nvim-cmp")
-
--- require("plugins.auto-close")
--- require("plugins.colorscheme")
--- require("plugins.gitsigns")
--- require("plugins.harpoon")
--- require("plugins.lualine")
--- require("plugins.maximize")
--- require("plugins.neo-tree")
--- require("plugins.notify")
--- require("plugins.smart-splits")
--- require("plugins.tabline")
--- require("plugins.telescope")
--- require("plugins.treesitter")
--- require("plugins.vim-fugitive")
--- require("plugins.vim-surround")
--- require("plugins.web-dev-icons")
 
 -- Function to clear all registers in Neovim
 local function clear_registers()
