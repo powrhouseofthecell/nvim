@@ -39,6 +39,14 @@ vim.api.nvim_create_user_command("ClearRegisters", clear_registers, {
 	desc = "Clear all registers",
 })
 
+-- In options.lua I have set WinBar to have some padding at the top, the below is used to have the same bg as theme.
+vim.cmd(
+	"highlight WinBar guibg="
+		.. vim.fn.synIDattr(vim.fn.hlID("Normal"), "bg")
+		.. " guifg="
+		.. vim.fn.synIDattr(vim.fn.hlID("Normal"), "fg")
+)
+
 -- Sets colors to line numbers Above, Current and Below  in this order
 -- function LineNumberColors()
 -- 	-- vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#51B3EC", bold = true })

@@ -18,6 +18,8 @@ opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 
+o.winbar = "%=%#NonText# " -- an empty line with default 'NonText' highlight
+
 opt.wrap = false
 
 opt.hlsearch = false
