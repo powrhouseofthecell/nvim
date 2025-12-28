@@ -31,6 +31,8 @@ return {
 				"emmet_ls",
 				"gopls",
 				"rust_analyzer",
+				-- "sqls",
+				"postgres-language-server"
 				-- "lua-language-server",
 				-- "json-lsp",
 				-- "golangci-lint",

@@ -2,7 +2,7 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate", -- Automatically update parsers after installation
 	config = function()
-		require("nvim-treesitter.configs").setup({
+	require('nvim-treesitter').setup({
 			ensure_installed = {
 				"vim",
 				"markdown",
@@ -16,6 +16,7 @@ return {
 				"tsx",
 				"go",
 				"rust",
+				"sql"
 			},
 			highlight = {
 				enable = true, -- false will disable the whole extension
