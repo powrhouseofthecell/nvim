@@ -50,18 +50,27 @@ return {
 	-- 	end,
 	-- },
 
+	-- {
+	-- 	"rose-pine/neovim",
+	-- 	name = "rose-pine",
+	-- 	config = function()
+	-- 		require("rose-pine").setup({
+	-- 			styles = {
+	-- 				bold = true,
+	-- 				italic = false,
+	-- 				transparency = true,
+	-- 			},
+	-- 		})
+	-- 		vim.cmd("colorscheme rose-pine")
+	-- 	end,
+	-- },
 	{
-		"rose-pine/neovim",
-		name = "rose-pine",
+		"Shatur/neovim-ayu",
 		config = function()
-			require("rose-pine").setup({
-				styles = {
-					bold = true,
-					italic = false,
-					transparency = true,
-				},
+			require("ayu").setup({
+				mirage = true, -- Set to true to use mirage variant
 			})
-			vim.cmd("colorscheme rose-pine")
+			vim.cmd("colorscheme ayu")
 		end,
 	},
 }

@@ -37,3 +37,6 @@ vim.opt.fillchars = {
 	eob = " ",
 }
 vim.opt.fillchars = "eob: ,vert: "
+
+-- Don't automatically add a trailing newline at the end of files on save
+vim.opt.fixendofline = false
